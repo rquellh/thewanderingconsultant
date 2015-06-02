@@ -1,0 +1,39 @@
+{{!< default}}
+
+<aside role="banner" class="cover">
+  <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
+  <div class="cover-container">
+    {{#if @blog.logo}}
+      <a href="{{@blog.url}}" class="cover-logo" data-pjax>
+        <img src="{{@blog.logo}}" alt="Blog Logo">
+      </a>
+    {{/if}}
+    <h1 class="cover-title">Search</h1>
+    <p class="cover-description"></p>
+  </div>
+</aside>
+
+<section class="wrapper" tabindex="0">
+  <div class="wrapper-container">
+		<form>
+        <input id="search-field" placeholder = "Start typing to search...">
+      </form>
+
+        
+      <section id="results"></section>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>
+      
+	  <script>
+        var searchField = $("#search-field").ghostHunter({
+                            results     : "#results",
+                            onKeyUp   : true
+                          });
+      </script>	 
+  </div>
+</section>
+
+
+
+
