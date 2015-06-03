@@ -1,0 +1,33 @@
+{{!< default}}
+
+<aside role="banner" class="cover">
+  <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
+  <div class="cover-container">
+    {{#if @blog.logo}}
+      <a href="{{@blog.url}}" class="cover-logo" data-pjax>
+        <img src="{{@blog.logo}}" alt="Blog Logo">
+      </a>
+    {{/if}}
+    <h1 class="cover-title">About Me</h1>
+    <p class="cover-description"></p>
+  </div>
+</aside>
+
+<section class="wrapper" tabindex="0">
+  <div class="wrapper-container">
+	<h1>Ryan</h1>
+	<h1>Quellhorst</h1>
+	<br>
+	<img src="\content\images\2015\06\drone.jpg" alt="DJI Phantom">
+	<br>
+	<br>
+    <p>Hi my name is Ryan. I am a QA analyst, lifelong learner, and full time tinkerer.</p>
+	<p>I've always been into tinkering since I was a little kid. I remember taking apart just about anything in hopes of finding out how it worked (much to my parents dismay). As I got older, I started building computers, fixing Xbox 360s, and fixing/tearing apart just about anything I could get my hands on.</p> 
+	<p>I wanted to transition my passion into a career, so I attended <a href="http://www.bgsu.edu/">Bowling Green State University</a> and graduated summa cum laude with a degree in Engineering Technology. After graduation, I worked at <a href="http://www.crown.com">Crown Equipment Corporation</a> and mechanically tested fork lifts. I learned a visual programming language called <a href="http://en.wikipedia.org/wiki/LabVIEW">LabVIEW</a>, and I designed automated test stands to mechanically test different lift truck components.</p>
+	<p>Also during this time, I became interested in the inner workings of the business world, so I attended <a href="http://www.wright.edu/">Wright State University</a> and graduated magna cum laude with a Masters in Business Administration (MBA).</p>
+	<p>I made the transition from mechanical tester to software tester in the Winter of 2014, and I can't begin to tell you how happy I am in the software world. As a consultant at <a href="http://www.hmbnet.com/">HMB</a>, I really enjoy learning about new business areas and bringing value to my clients. I am passionate about software testing with Ruby and Agile development using Scrum. I am also <a href="https://www.scrum.org/Assessments/Professional-Scrum-Master-Assessments/PSM-I-Assessment">PSM I Certified.</a></p>
+	<p>My interests are videography using the <a href="http://gopro.com/">GoPro Camera</a> and <a href="http://www.dji.com/">DJI Phantom</a> (check out my videos on my <a href="https://www.youtube.com/channel/UCDSkJQl5W50ymXZg2PSECfQ">Youtube channel</a>). I am also trying my hand at home automation, so stay tuned for posts about that!</p>
+	<p>I live with my beautiful wife Melissa in Pickerington, OH.</p>
+	{{> footer this}}
+  </div>
+</section>
